@@ -1,4 +1,3 @@
-// Завдання 1: Перевірка паліндрому
 function checkPalindrome() {
     const number = prompt("Введіть п'ятирозрядне число:");
     
@@ -14,7 +13,6 @@ function checkPalindrome() {
     }
 }
 
-// Завдання 2: Розрахунок знижки
 function calculateDiscount() {
     const amount = parseFloat(prompt("Введіть суму покупки:"));
     
@@ -43,7 +41,6 @@ function calculateDiscount() {
     `;
 }
 
-// Завдання 3: Статистика чисел
 function calculateStatistics() {
     let positive = 0, negative = 0, zeros = 0;
     let even = 0, odd = 0;
@@ -53,16 +50,14 @@ function calculateStatistics() {
         
         if (isNaN(number)) {
             alert("Введіть коректне число!");
-            i--; // Повторити введення
+            i--; 
             continue;
         }
         
-        // Підрахунок додатніх, від'ємних, нулів
         if (number > 0) positive++;
         else if (number < 0) negative++;
         else zeros++;
         
-        // Підрахунок парних і непарних (тільки для цілих чисел)
         if (Number.isInteger(number)) {
             if (number % 2 === 0) even++;
             else odd++;
@@ -79,7 +74,6 @@ function calculateStatistics() {
     `;
 }
 
-// Завдання 4: Дні тижня
 function showDaysOfWeek() {
     const days = ['Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота', 'Неділя'];
     let currentDay = 0;
@@ -87,7 +81,7 @@ function showDaysOfWeek() {
     
     do {
         result += `<p>${days[currentDay]}</p>`;
-        currentDay = (currentDay + 1) % 7; // Циклічне повернення до початку
+        currentDay = (currentDay + 1) % 7; 
     } while (confirm(`${days[currentDay - 1 >= 0 ? currentDay - 1 : 6]}. Хочеш побачити наступний день?`));
     
     document.getElementById('days-result').innerHTML = `
@@ -96,7 +90,3 @@ function showDaysOfWeek() {
     `;
 }
 
-// Ініціалізація при завантаженні сторінки
-document.addEventListener('DOMContentLoaded', function() {
-    // Можна викликати функції автоматично або через кнопки
-});
