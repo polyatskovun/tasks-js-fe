@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Homework 25</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Домашнє завдання JavaScript</h1>
+    
+    <div class="task-section">
+        <h2>Завдання 1: Перевірка паліндрому</h2>
+        <div class="task-description">
+            Програма запитує у користувача п'ятирозрядне число та перевіряє, чи є воно паліндромом. 
+            Паліндром - це число, яке читається однаково зліва направо і справа наліво (наприклад: 12321, 54345).
+        </div>
+        <button onclick="checkPalindrome()">Перевірити паліндром</button>
+        <div id="palindrome-result" class="result"></div>
+    </div>
+    
+    <div class="task-section">
+        <h2>Завдання 2: Розрахунок знижки</h2>
+        <div class="task-description">
+            Програма розраховує суму до оплати зі знижкою залежно від суми покупки:
+            <br>• 200-300 грн → знижка 3%
+            <br>• 300-500 грн → знижка 5%
+            <br>• від 500 грн → знижка 7%
+        </div>
+        <button onclick="calculateDiscount()">Розрахувати знижку</button>
+        <div id="discount-result" class="result"></div>
+    </div>
+    
+    <div class="task-section">
+        <h2>Завдання 3: Статистика чисел</h2>
+        <div class="task-description">
+            Програма запитує 10 чисел у користувача і виводить статистику:
+            <br>• Кількість додатніх, від'ємних і нульових значень
+            <br>• Кількість парних і непарних цілих чисел
+            <br>Використовується лише одна змінна для введення всіх чисел.
+        </div>
+        <button onclick="calculateStatistics()">Ввести 10 чисел</button>
+        <div id="statistics-result" class="result"></div>
+    </div>
+    
+    <div class="task-section">
+        <h2>Завдання 4: Дні тижня</h2>
+        <div class="task-description">
+            Програма циклічно показує дні тижня. Після кожного дня запитує: "Хочеш побачити наступний день?". 
+            Цикл продовжується, поки користувач натискає "ОК". Після неділі знову починається з понеділка.
+        </div>
+        <button onclick="showDaysOfWeek()">Показати дні тижня</button>
+        <div id="days-result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
